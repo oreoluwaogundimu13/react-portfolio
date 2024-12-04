@@ -1,7 +1,8 @@
 import React from 'react';
 import {BiHomeAlt, BiUser} from 'react-icons/bi';
 import { BsClipboardData, BsBriefcase, BsChatSquareText } from 'react-icons/bs';
-import { Link } from 'react-scroll';
+ import { Link } from 'react-scroll';
+
 
 const NavBar = () => {
   return (
@@ -9,45 +10,46 @@ const NavBar = () => {
     <div className='container mx-auto'>
 
       <div className='w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between items-center text-2xl text-white/50'>
-        <Link 
+       <Link 
         activeClass='active'
         smooth={true} 
         spy={true}
         offset={-200}
-        to='home' 
-        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        to='/Header' 
+        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:bg-blue-800 rounded-full '>
           <BiHomeAlt/>
         </Link>
         <Link 
         activeClass='active'
         smooth={true} 
         spy={true} 
-        to='about' 
-        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        offset={-200}
+        to='/banner' 
+        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:bg-blue-200 rounded-full'>
           <BiUser/>
         </Link>
         <Link 
         activeClass='active'
         smooth={true}
         spy={true}  
-        to='services' 
-        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        to='/about' 
+        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:bg-blue-200 rounded-full'>
           <BsClipboardData />
         </Link>
         <Link 
         activeClass='active'
         smooth={true} 
         spy={true} 
-        to='work' 
-        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        to='/work' 
+        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:bg-blue-200 rounded-full active:bg-blue-200'>
           <BsBriefcase />
         </Link>
         <Link 
         activeClass='active' 
         smooth={true} 
         spy={true}
-        to='contact' 
-        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center'>
+        to='/contact' 
+        className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center hover:bg-blue-200 rounded-full'>
           <BsChatSquareText />
         </Link>
        
